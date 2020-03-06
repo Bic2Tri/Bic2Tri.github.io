@@ -1,0 +1,269 @@
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 5%;
+    width: 100%;
+    padding-top:45%;
+}
+ 
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.overlay {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.text {
+	margin:auto;
+	margin-top:17vw;
+	background: rgba(0,0,0,0.3);
+	width:50%;
+	opacity:0.9;
+	border-radius:1vw;
+	
+}
+
+.text p {
+	text-align:center;
+	
+	font-size:4vw;
+	padding: 1vw;
+	color: white;
+	word-wrap:break-word;
+	
+}
+
+.text3 {
+	animation:en 40s;
+	word-wrap:break-word;
+	font-size:2vw;
+	width:50%;
+	margin-top:22vw;
+	margin-left:10vw;
+}
+
+.text3 a {
+	color:white;
+}
+
+.text2{
+	animation:op 40s ease infinite;
+	background: rgba(0,0,0,0.3);
+	opacity:0;
+	padding:1vw;
+	border-radius:1vw;
+	font-size:1.3vw;
+	margin-top:4vw;
+	margin-left:65vw;
+	width:30%;
+	word-wrap:break-word;
+	
+	    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+	}
+
+.text2 a {
+	color:white;
+}
+
+.overlay h1 {
+    text-align:center;
+    color:#fff;
+    font-size: 50px;
+	font-family: Bradley Hand, cursive;
+    margin-top:17%;
+}
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('../images/plane.jpg') center center / cover no-repeat;
+    }
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+.pages {
+	position:absolute;
+	z-index: 5;
+	margin-top:43vw;
+	margin-left:32vw;
+}
+
+.pages ul {
+  list-style: none; 
+  margin: 0 auto;
+  display:flex;
+}
+
+.pages a {
+	font-size:1.5vw;
+	padding-right:3vw;
+  text-decoration: none;
+  color:white;
+  opacity:0.9;
+}
+
+.NavBar {
+	position:absolute;
+	margin-left:69vw;
+	margin-top:7vw;
+	z-index: 5;
+}
+
+
+.NavBar ul {
+  list-style: none; 
+  margin: 0 auto;
+  display:flex;
+  
+}
+.NavBar a {
+	font-size:1.5vw;
+	padding-right:1.5vw;
+  text-decoration: none;
+  color:white;
+  opacity:0.9;
+}
+
+  transition: .5s linear;
+}
+}
+
+
+.text9 {
+
+}
+
+@keyframes op {
+
+	0%{
+	  opacity:0;
+	}
+    0% {
+	  opacity:0;
+    }
+	10% {
+	  opacity:1;
+	}
+    40% {
+      opacity:1;
+    }
+	50% {
+      opacity:0;
+    }
+	100% {
+      opacity:0;
+    }
+	
+}
+
+@keyframes log {
+
+	0%{
+	  transform: translate(0,0px);
+	}
+    0% {
+	  transform: translate(0,0px);
+    }
+	50% {
+	  transform: translate(0,8px);
+	}
+    100% {
+      transform: translate(0,0px);
+	}
+	
+}
+
+
+@keyframes en {
+
+	0%{
+	  opacity:0;
+	}
+    0% {
+	  opacity:0;
+    }
+	10% {
+	  opacity:1;
+	}
+    40% {
+      opacity:1;
+    }
+	50% {
+      opacity:0;
+    }
+	100% {
+      opacity:0;
+    }
+	
+}
+
+.logo {
+	animation:log 4s ease infinite;
+	position:absolute;
+	padding-left:5vw;
+	padding-top:5vw;
+}
+
+
+.videos {
+	position: absolute;
+	display: flex;
+	margin:5.5vw;
+	padding-top: 17vw;
+}
+
+.videos2 {
+	position: absolute;
+	display: flex-wrap;
+	margin:5.5vw;
+}
+
+
+
+.button_voice {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.button_voice__noisy:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* прописывай стили для кнопки со звуком*/
+  background-color: white;
+}
+
+.button_voice__mute:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* прописывай стили для кнопки без звука*/
+  background-color: black;
+}
+
